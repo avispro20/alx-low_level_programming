@@ -1,22 +1,28 @@
+#include <stdlib.h>
 #include <stdio.h>
-
+#include <time.h>
 /**
-* main - Prints the alphabet in lowercase, and then in uppercase.
-*
-* Return: Always 0 (Success).
+*main- entry point
+*Description: Alphabets
+*Return: zero on success
 */
 int main(void)
 {
-char letter;
+	char letter = 'a';
 
-for (letter = 'a'; letter <= 'z';letter++)
-putchar(letter);
+	while (letter <= 'z')
+	{
+		putchar(letter);
+		letter++;
+	}
 
-for (letter = 'A'; letter <= 'Z';letter++)
-putchar(letter);
+	letter = 'A';
 
-putchar('\n');
-
-return (0);
+	while (letter <= 'Z')
+	{
+		putchar(letter);
+		letter++;
+	}
+	putchar('\n');
+	return (0);
 }
-
