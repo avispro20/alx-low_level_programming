@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 /**
- * main - multiply two numbers
- * @argc: number of arguments
- * @argv: arguments entered
- * Description: return product
- * Return: zero
- */
+* main - multiply two numbers
+* @argc: number of arguments
+* @argv: arguments entered
+* Description: return product
+* Return: zero
+*/
 
 int main(int argc, char *argv[])
 {
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	if (s1[0] == '-')
-		num = -1 * atoi(&s1[1]);
+		num1 = -1 * atoi(&s1[1]);
 	else
 		num1 = atoi(&s1[0]);
 	if (s2[0] == '-')
